@@ -3,7 +3,10 @@ import bisect
 from aserver import AServer
 from aclient import AClient
 from helper import Helper
-import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use('Agg')
+from matplotlib import pyplot as plt
+#import matplotlib.pyplot as plt
 plt.style.use('ggplot')
 
 SEED = 2023
